@@ -61,6 +61,7 @@ jobs:
       - name: Rename system.img to system.img.ext4
         run: |
           cd tar-md5-script-tool
+          Rename-Item -Path 'lineage-19.1-20250118-UNOFFICIAL-arm64_bvS.img' -NewName 'system.img'
           Rename-Item -Path 'system.img' -NewName 'system.img.ext4'
           ls
 
